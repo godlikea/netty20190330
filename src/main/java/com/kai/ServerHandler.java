@@ -10,7 +10,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
 	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
 		//((ByteBuf)msg).release();
 		try {
-			
+			System.out.println("123");
 		}finally {
 			ReferenceCountUtil.release(msg);
 		}
